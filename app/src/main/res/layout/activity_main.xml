@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dionysuspoon.testingcapcha.MainActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.example.dionysuspoon.testingcapcha.CaptchaImageView
+        android:id="@+id/cv_captcha_image"
+        android:layout_width="120dp"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="18dp">
+        <EditText
+            android:id="@+id/et_captcha_input"
+            android:hint="請輸入圖中的字元"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/b_captcha_submit"
+            android:layout_marginTop="8dp"
+            android:text="發驗證碼"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+     />
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
